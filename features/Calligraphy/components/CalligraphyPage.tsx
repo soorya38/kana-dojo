@@ -120,20 +120,21 @@ const CalligraphyPage = () => {
             <span className='text-3xl'>🖌️</span>
             <div>
               <span className='font-bold text-[#D97706] text-lg'>かな道場</span>
-              <span className='text-gray-500 text-sm block'>
-                Japanese Calligraphy Practice
+              <span className='text-[var(--secondary-color)] text-2xl block'>
+                Calligraphy
               </span>
             </div>
           </Link>
           <button
             onClick={() => setShowHowToUse(true)}
-            className='w-9 h-9 rounded-full bg-white border border-gray-200 text-gray-500 flex items-center justify-center hover:border-[#F59E0B]'
+            className='relative z-50 w-9 h-9 rounded-full bg-white border border-gray-200 text-gray-500 flex items-center justify-center hover:border-[#F59E0B]'
           >
             ?
           </button>
         </header>
-        <div className='flex-1 flex items-center justify-center p-8 -mt-16'>
-          <div className='flex items-center justify-center gap-8 md:gap-16'>
+        {/* Main - 3 Vertical Bars */}
+        <div className='flex-1 flex items-center justify-center p-8 -mt-16 relative z-10'>
+          <div className='flex items-center justify-center gap-25 md:gap-25'>
             {STEPS.map(step => (
               <button
                 key={step.id}
@@ -142,12 +143,17 @@ const CalligraphyPage = () => {
               >
                 <div className='flex items-center gap-4 flex-1'>
                   <div
-                    className='text-[11px] font-medium text-gray-500 tracking-[0.15em]'
-                    style={{ writingMode: 'vertical-rl' }}
+                    className='text-[11px] font-medium text-[var(--secondary-color)] tracking-[0.15em] leading-[1.6]'
+                    style={{
+                      writingMode: 'vertical-rl',
+                      textOrientation: 'mixed'
+                    }}
                   >
                     {step.titleEn}
                   </div>
-                  <span className='text-gray-300'>~</span>
+                  <span className='text-[var(--secondary-color)] opacity-50'>
+                    ~
+                  </span>
                   <div className='flex flex-col items-center text-[16px] text-[#D97706] opacity-70'>
                     {step.titleJp.split('').map((char, i) => (
                       <span key={i}>{char}</span>
@@ -175,22 +181,23 @@ const CalligraphyPage = () => {
             <span className='text-3xl'>🖌️</span>
             <div>
               <span className='font-bold text-[#D97706] text-lg'>かな道場</span>
-              <span className='text-gray-500 text-sm block'>
-                Japanese Calligraphy Practice
+              <span className='text-[var(--secondary-color)] text-2xl block'>
+                Calligraphy
               </span>
             </div>
           </Link>
           <button
             onClick={() => setShowHowToUse(true)}
-            className='w-9 h-9 rounded-full bg-white border border-gray-200 text-gray-500 flex items-center justify-center hover:border-[#F59E0B]'
+            className='relative z-50 w-9 h-9 rounded-full bg-white border border-gray-200 text-gray-500 flex items-center justify-center hover:border-[#F59E0B]'
           >
             ?
           </button>
         </header>
+
         <div className='flex-1 p-4 flex flex-col gap-3 max-w-5xl mx-auto w-full'>
           <button
             onClick={() => setActiveStep(2)}
-            className='h-14 bg-white rounded-xl flex items-center justify-between px-4 border border-gray-200 hover:border-[#F59E0B] shadow-sm'
+            className='h-18 bg-white rounded-xl flex items-center justify-between px-4 border border-gray-200 hover:border-[#F59E0B] shadow-sm'
           >
             <div className='flex items-center gap-3'>
               <div className='w-8 h-8 rounded-full bg-[#FEF3C7] border border-[#F59E0B]/30 text-[#D97706] flex items-center justify-center font-bold'>
@@ -319,9 +326,9 @@ const CalligraphyPage = () => {
               </div>
             </div>
           </div>
-          <div className='h-14 bg-white rounded-xl flex items-center px-4 border border-gray-200 opacity-60'>
+          <div className='h-14 bg-white rounded-xl flex items-center px-4 border border-gray-200'>
             <div className='flex items-center gap-3'>
-              <div className='w-8 h-8 rounded-full bg-gray-100 border border-gray-200 text-gray-400 flex items-center justify-center font-medium'>
+              <div className='w-8 h-8 rounded-full bg-[#FEF3C7] border border-[#F59E0B]/30 text-[#D97706] flex items-center justify-center font-medium'>
                 3
               </div>
               <span className='text-sm text-gray-400'>PRACTICE & LEARN</span>
@@ -342,14 +349,14 @@ const CalligraphyPage = () => {
             <span className='text-3xl'>🖌️</span>
             <div>
               <span className='font-bold text-[#D97706] text-lg'>かな道場</span>
-              <span className='text-gray-500 text-sm block'>
-                Japanese Calligraphy Practice
+              <span className='text-[var(--secondary-color)] text-2xl block'>
+                Calligraphy
               </span>
             </div>
           </Link>
           <button
             onClick={() => setShowHowToUse(true)}
-            className='w-9 h-9 rounded-full bg-white border border-gray-200 text-gray-500 flex items-center justify-center hover:border-[#F59E0B]'
+            className='relative z-50 w-9 h-9 rounded-full bg-white border border-gray-200 text-gray-500 flex items-center justify-center hover:border-[#F59E0B]'
           >
             ?
           </button>
@@ -412,19 +419,19 @@ const CalligraphyPage = () => {
   // FRAME 3 - Main Practice (continued in next part)
   return (
     <div className='min-h-[100dvh] flex flex-col bg-[#FFFBF5]'>
-      <header className='flex items-center justify-between px-6 py-3'>
+      <header className='flex items-center justify-between px-6 py-4'>
         <Link href='/vocabulary' className='flex items-center gap-3'>
-          <span className='text-2xl'>🖌️</span>
+          <span className='text-3xl'>🖌️</span>
           <div>
-            <span className='font-bold text-[#D97706]'>かな道場</span>
-            <span className='text-gray-400 text-xs block'>
-              Japanese Calligraphy Practice
+            <span className='font-bold text-[#D97706] text-lg'>かな道場</span>
+            <span className='text-[var(--secondary-color)] text-2xl block'>
+              Calligraphy
             </span>
           </div>
         </Link>
         <button
           onClick={() => setShowHowToUse(true)}
-          className='w-8 h-8 rounded-full bg-white border border-gray-200 text-gray-400 flex items-center justify-center hover:border-[#F59E0B]'
+          className='relative z-50 w-9 h-9 rounded-full bg-white border border-gray-200 text-gray-500 flex items-center justify-center hover:border-[#F59E0B]'
         >
           ?
         </button>
