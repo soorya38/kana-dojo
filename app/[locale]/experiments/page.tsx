@@ -34,6 +34,64 @@ type Experiment = {
 };
 
 const experiments: Experiment[] = [
+  // New Experiments (2026)
+  {
+    name: 'Kana Pop',
+    description: 'Juicy bubble popping fun',
+    href: '/experiments/pop',
+    icon: CircleDot,
+    color: 'text-blue-300'
+  },
+  {
+    name: 'Flash Rush',
+    description: 'High-speed kana identification',
+    href: '/experiments/rush',
+    icon: Zap,
+    color: 'text-yellow-400'
+  },
+  {
+    name: 'Hanabi',
+    description: 'Traditional kana fireworks',
+    href: '/experiments/hanabi',
+    icon: Flame,
+    color: 'text-orange-500'
+  },
+  {
+    name: 'Kana Trace',
+    description: 'Practice stroke order',
+    href: '/experiments/trace',
+    icon: Palette,
+    color: 'text-rose-400'
+  },
+  {
+    name: 'Kana Wave',
+    description: 'Rhythm timing challenge',
+    href: '/experiments/wave',
+    icon: Waves,
+    color: 'text-indigo-400'
+  },
+  {
+    name: 'Zen Bonsai',
+    description: 'Mindful growth clicker',
+    href: '/experiments/bonsai',
+    icon: TreePine,
+    color: 'text-emerald-500'
+  },
+  {
+    name: 'Kana Nebula',
+    description: 'Deep space exploration',
+    href: '/experiments/nebula',
+    icon: Telescope,
+    color: 'text-purple-300'
+  },
+  {
+    name: 'Kana Search',
+    description: 'Find character in grid',
+    href: '/experiments/search',
+    icon: Search,
+    color: 'text-amber-500'
+  },
+  // Classic Experiments
   {
     name: 'Zen Mode',
     description: 'Relax with animated decorations',
@@ -103,62 +161,6 @@ const experiments: Experiment[] = [
     href: '/experiments/runner',
     icon: Ghost,
     color: 'text-slate-200'
-  },
-  {
-    name: 'Kana Pop',
-    description: 'Juicy bubble popping fun',
-    href: '/experiments/pop',
-    icon: CircleDot,
-    color: 'text-blue-300'
-  },
-  {
-    name: 'Flash Rush',
-    description: 'High-speed kana identification',
-    href: '/experiments/rush',
-    icon: Zap,
-    color: 'text-yellow-400'
-  },
-  {
-    name: 'Hanabi',
-    description: 'Traditional kana fireworks',
-    href: '/experiments/hanabi',
-    icon: Flame,
-    color: 'text-orange-500'
-  },
-  {
-    name: 'Kana Trace',
-    description: 'Practice stroke order',
-    href: '/experiments/trace',
-    icon: Palette,
-    color: 'text-rose-400'
-  },
-  {
-    name: 'Kana Wave',
-    description: 'Rhythm timing challenge',
-    href: '/experiments/wave',
-    icon: Waves,
-    color: 'text-indigo-400'
-  },
-  {
-    name: 'Zen Bonsai',
-    description: 'Mindful growth clicker',
-    href: '/experiments/bonsai',
-    icon: TreePine,
-    color: 'text-emerald-500'
-  },
-  {
-    name: 'Kana Nebula',
-    description: 'Deep space exploration',
-    href: '/experiments/nebula',
-    icon: Telescope,
-    color: 'text-purple-300'
-  },
-  {
-    name: 'Kana Search',
-    description: 'Find character in grid',
-    href: '/experiments/search',
-    icon: Search,
-    color: 'text-amber-500'
   }
 ];
 
